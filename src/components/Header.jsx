@@ -5,7 +5,7 @@ function Header() {
   
         <header>
             <div className="wrapper">
-                <img className="logo" src={logo} alt="logo kasa" />
+                <a href="/"><img className="logo" src={logo} alt="logo kasa" /></a>
                 <nav>
                     <ul>
                         <li><a href="/">Accueil</a></li>
