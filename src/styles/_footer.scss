@@ -1,0 +1,21 @@
+footer{
+    background: #000;
+    color: #fff;
+    padding: 60px 0 30px;
+    margin-top: 100px;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        p{
+            font-size: 24px;
+            font-weight: 500;
+
+            @media screen and (max-width: $phone) {
+                font-size: 12px; 
+            }
+        }
+    }
+}
