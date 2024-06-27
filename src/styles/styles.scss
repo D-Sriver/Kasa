@@ -8,38 +8,37 @@
 @import './home.scss';
 @import './_collapse.scss';
 @import './404.scss';
-@import './_main.scss';
 @import './card.scss';
 
 // Style général
-body, *{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat";
-    box-sizing: border-box;
+body,
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+	box-sizing: border-box;
 }
 
-#root{
-    display: flex;
-    justify-content: space-between;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+#root {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-
-.wrapper{
-    position: relative;
-    max-width: 1240px;
-    width: 95%;
-    margin: auto;
-    flex: 1;
+.wrapper {
+	position: relative;
+	max-width: 1240px;
+	width: 95%;
+	margin: auto;
+	flex: 1;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-    }
+a {
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
