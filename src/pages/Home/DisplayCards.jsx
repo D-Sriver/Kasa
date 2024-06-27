@@ -1,7 +1,7 @@
 import housings from '../../data/logements.json'
 import Card from './Card'
 
-const DisplayCards = () => {
+export default function DisplayCards() {
 	return (
 		<section className="housings_container">
 			<div className="wrapper">
@@ -14,5 +14,3 @@ const DisplayCards = () => {
 		</section>
 	)
 }
-
-export default DisplayCards

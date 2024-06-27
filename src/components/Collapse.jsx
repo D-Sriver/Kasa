@@ -1,11 +1,10 @@
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import PropTypes from 'prop-types' // Add this line
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
-const Collapse = ({ title, content }) => {
+export default function Collapse({ title, content }) {
 	const [openTab, setOpenTab] = useState(false)
-
 	const openCollapse = () => {
 		setOpenTab((openTab) => !openTab)
 	}
@@ -31,5 +30,3 @@ Collapse.propTypes = {
 	title: PropTypes.string.isRequired,
 	content: PropTypes.node.isRequired,
 }
-
-export default Collapse
