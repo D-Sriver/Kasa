@@ -16,10 +16,6 @@ function Header() {
 						<li>
 							<Link to="/a-propos">A propos</Link>
 						</li>
-						<li>
-							{/* à supprimer */}
-							<Link to="/err">Erreur</Link>
-						</li>
 					</ul>
 				</nav>
 			</div>

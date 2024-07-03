@@ -1,3 +1,14 @@
+.collapses {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	gap: 30px;
+}
+@media screen and (max-width: $phone) {
+	.collapses {
+		grid-template-columns: 1fr;
+		gap: 0px;
+	}
+}
 .collapse_header {
 	color: white;
 	background: $primary-color;
@@ -28,9 +39,6 @@
 	background: $gris;
 	padding: 5%;
 	border-radius: 0 0 10px 10px;
-	@media screen and (min-width: $tablette) {
-		font-size: 24px;
-	}
 	ul > li {
 		list-style-type: none;
 		padding: 2px;
