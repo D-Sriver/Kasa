@@ -1,10 +1,10 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
+import ImageCarousel from '../components/ImageCarousel'
 import logements from '../data/logements.json'
-import greyStar from '../images/grey_star.svg'
-import redStar from '../images/red_star.svg'
 import NotFound from './NotFound'
-
 export default function Housing() {
 	const { id } = useParams()
 	const scale = [1, 2, 3, 4, 5]
@@ -17,7 +17,7 @@ export default function Housing() {
 
 	return (
 		<div className="housingPage wrapper">
-			<img src={logement.cover} alt={logement.title} className="logementCover" />
+			<ImageCarousel pictures={logement.pictures} />
 			<div className="general">
 				<div className="housingInfos">
 					<h1>{logement.title}</h1>
@@ -36,12 +36,12 @@ export default function Housing() {
 					<div className="rating">
 						{scale.map((rangeElem) =>
 							Number(ScaleValue) >= rangeElem ? (
-								<span key={rangeElem.toString()}>
-									<img src={redStar} alt="etoile rouge" />
+								<span key={rangeElem.toString()} className="star red">
+									<FontAwesomeIcon icon={faStar} />
 								</span>
 							) : (
-								<span key={rangeElem.toString()}>
-									<img src={greyStar} alt="etoile grise" />
+								<span key={rangeElem.toString()} className="star grey">
+									<FontAwesomeIcon icon={faStar} />
 								</span>
 							)
 						)}

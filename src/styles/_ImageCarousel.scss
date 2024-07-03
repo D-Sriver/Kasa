@@ -1,0 +1,46 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	margin: auto;
+
+	.carouselImage {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: $container-radius;
+	}
+	@media screen and (max-width: $tablette) {
+		.carouselImage {
+			height: 350px;
+		}
+	}
+	@media screen and (max-width: $phone) {
+		.carouselImage {
+			height: 300px;
+		}
+	}
+
+	.carouselButton {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.1);
+		color: white;
+		border: none;
+		padding: 20px;
+		cursor: pointer;
+		font-size: xx-large;
+		z-index: 2;
+		@media screen and (max-width: 768px) {
+			font-size: xxx-large;
+		}
+
+		&.prevButton {
+			left: 10px;
+		}
+
+		&.nextButton {
+			right: 10px;
+		}
+	}
+}

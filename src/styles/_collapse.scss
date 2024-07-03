@@ -8,9 +8,12 @@
 	cursor: pointer;
 	h2 {
 		font-weight: 500;
-		font-size: 13px;
+		font-size: 20px;
 		@media screen and (min-width: $tablette) {
 			font-size: 24px;
+		}
+		@media screen and (min-width: $phone) {
+			font-size: 20px;
 		}
 	}
 	i {
@@ -21,10 +24,15 @@
 	}
 }
 .collapse_content {
+	color: black;
 	background: $gris;
-	padding: 36px 27px 19px 18px;
+	padding: 5%;
 	border-radius: 0 0 10px 10px;
 	@media screen and (min-width: $tablette) {
 		font-size: 24px;
+	}
+	ul > li {
+		list-style-type: none;
+		padding: 2px;
 	}
 }
