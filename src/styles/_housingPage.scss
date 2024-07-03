@@ -1,0 +1,62 @@
+.housingPage {
+	padding-top: 60px;
+	color: $primary-color;
+	.logementCover {
+		border-radius: 20px;
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.general {
+		.housingInfos {
+			h1 {
+				font-size: clamp(1.5rem, -1.3rem + 8vw, 3rem);
+				font-weight: 500;
+				& + p {
+					font-size: clamp(1rem, -0.875rem + 8vw, 1.5rem);
+					color: black;
+					margin-bottom: 20px;
+				}
+			}
+			.tags {
+				display: flex;
+				gap: 10px;
+				flex-wrap: wrap;
+				list-style: none;
+				li {
+					color: white;
+					font-size: 14px;
+					background: $primary-color;
+					padding: 3px 40px;
+					border-radius: $item-radius;
+				}
+			}
+		}
+		.otherInfos {
+			display: flex;
+			justify-content: space-between;
+			.host {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 24px;
+				order: 2;
+				p {
+					font-size: 18px;
+					font-weight: 500;
+					text-align: right;
+					max-width: 90px;
+				}
+				img {
+					border-radius: 50%;
+					max-width: 64px;
+				}
+			}
+			.rating {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
+}

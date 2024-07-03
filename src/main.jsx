@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Apropos from './pages/Apropos'
 import Home from './pages/Home'
+import Logement from './pages/Housing'
 import NotFound from './pages/NotFound'
 import './styles/styles.scss'
 
@@ -17,6 +18,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/a-propos" element={<Apropos />} />
 				<Route path="*" element={<NotFound />} />
+				<Route path="/Housing/:id" element={<Logement />} />
 			</Routes>
 			<Footer />
 		</Router>
