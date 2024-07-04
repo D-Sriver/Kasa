@@ -21,18 +21,22 @@ function ImageCarousel({ pictures }) {
 				alt={`Slide ${currentIndex + 1}`}
 				className="carouselImage"
 			/>
-			<button onClick={prevSlide} className="carouselButton prevButton">
-				❮
-			</button>
-			<button onClick={nextSlide} className="carouselButton nextButton">
-				❯
-			</button>
+			{pictures.length > 1 && (
+				<>
+					<button onClick={prevSlide} className="carouselButton prevButton">
+						❮
+					</button>
+					<button onClick={nextSlide} className="carouselButton nextButton">
+						❯
+					</button>
+				</>
+			)}
 		</div>
 	)
 }
 
 ImageCarousel.propTypes = {
-	pictures: PropTypes.array.isRequired,
+	pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default ImageCarousel
