@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../images/logo_kasa.svg'
 
 function Header() {
+	const location = useLocation()
 	return (
 		<header>
 			<div className="wrapper">
@@ -10,10 +11,10 @@ function Header() {
 				</Link>
 				<nav>
 					<ul>
-						<li>
+						<li className={location.pathname === '/' ? 'active' : ''}>
 							<Link to="/">Accueil</Link>
 						</li>
-						<li>
+						<li className={location.pathname === '/a-propos' ? 'active' : ''}>
 							<Link to="/a-propos">A propos</Link>
 						</li>
 					</ul>
