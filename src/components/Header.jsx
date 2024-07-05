@@ -12,10 +12,14 @@ function Header() {
 				<nav>
 					<ul>
 						<li className={location.pathname === '/' ? 'active' : ''}>
-							<Link to="/">Accueil</Link>
+							<Link to="/">
+								<span className="nav-link-hitbox">Accueil</span>
+							</Link>
 						</li>
 						<li className={location.pathname === '/a-propos' ? 'active' : ''}>
-							<Link to="/a-propos">A propos</Link>
+							<Link to="/a-propos">
+								<span className="nav-link-hitbox">A propos</span>
+							</Link>
 						</li>
 					</ul>
 				</nav>
