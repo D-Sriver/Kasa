@@ -29,6 +29,11 @@ function ImageCarousel({ pictures }) {
 					<button onClick={nextSlide} className="carouselButton nextButton">
 						❯
 					</button>
+					{pictures.length > 1 && (
+						<div className="carouselCounter">
+							{currentIndex + 1}/{pictures.length}
+						</div>
+					)}
 				</>
 			)}
 		</div>

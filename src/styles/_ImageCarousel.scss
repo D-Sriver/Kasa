@@ -8,6 +8,7 @@
 		height: 400px;
 		object-fit: cover;
 		border-radius: $container-radius;
+		box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 	}
 	@media screen and (max-width: $tablette) {
 		.carouselImage {
@@ -19,7 +20,15 @@
 			height: 300px;
 		}
 	}
-
+	.carouselCounter {
+		width: 100%;
+		position: absolute;
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+		color: white;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	}
 	.carouselButton {
 		position: absolute;
 		top: 50%;
