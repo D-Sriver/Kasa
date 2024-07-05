@@ -1,4 +1,4 @@
-import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
@@ -14,13 +14,11 @@ export default function Collapse({ title, content }) {
 			<div className="collapse">
 				<div onClick={openCollapse} className="collapse_header">
 					<h2>{title}</h2>
-					{!openTab ? (
-						<i>{<FontAwesomeIcon icon={faAngleDown} />}</i>
-					) : (
-						<i>{<FontAwesomeIcon icon={faAngleUp} />}</i>
-					)}
+					<i className={openTab ? 'rotate' : ''}>
+						<FontAwesomeIcon icon={faAngleUp} />
+					</i>
 				</div>
-				{openTab && <div className="collapse_content">{content}</div>}
+				<div className={`collapse_content ${openTab ? 'open' : ''}`}>{content}</div>
 			</div>
 		</>
 	)

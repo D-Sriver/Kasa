@@ -28,17 +28,32 @@
 		}
 	}
 	i {
+		font-size: 24px;
 		position: absolute;
 		top: 50%;
 		right: 32px;
 		transform: translateY(-50%);
+		transition: transform 0.5s ease;
+
+		&.rotate {
+			transform: translateY(-50%) rotate(-180deg);
+		}
 	}
 }
 .collapse_content {
 	color: black;
 	background: $gris;
-	padding: 5%;
+	padding: 0 5%;
+	max-height: 0;
+	overflow: hidden;
+	transition: padding 0.4s;
 	border-radius: 0 0 10px 10px;
+
+	&.open {
+		max-height: 1000px;
+		padding: 5%;
+	}
+
 	ul > li {
 		list-style-type: none;
 		padding: 2px;
