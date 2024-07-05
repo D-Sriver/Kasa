@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Kasa",
+  "steps": [
+    {
+      "file": "src/main.jsx",
+      "description": "Création des routes",
+      "line": 15
+    },
+    {
+      "file": "src/components/Header.jsx",
+      "description": "Header",
+      "line": 4
+    },
+    {
+      "file": "src/pages/Home/index.jsx",
+      "description": "la page main ",
+      "line": 5
+    },
+    {
+      "file": "src/pages/Home/DisplayCards.jsx",
+      "description": "Display card et card",
+      "line": 4
+    },
+    {
+      "file": "src/components/Footer.jsx",
+      "description": "Footer",
+      "line": 3
+    },
+    {
+      "file": "src/main.jsx",
+      "description": "Ajout des lien suup",
+      "line": 16
+    },
+    {
+      "file": "src/pages/Apropos.jsx",
+      "description": "Apropos",
+      "line": 5
+    },
+    {
+      "file": "src/components/Collapse.jsx",
+      "description": "Collapse",
+      "line": 6
+    },
+    {
+      "file": "src/pages/Housing.jsx",
+      "description": "Logement",
+      "line": 8
+    },
+    {
+      "file": "src/components/ImageCarousel.jsx",
+      "description": "Carousel",
+      "line": 4
+    },
+    {
+      "file": "src/pages/Housing.jsx",
+      "description": "Colapse diff",
+      "line": 51
+    }
+  ],
+  "ref": "main"
+}

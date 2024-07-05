@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom'
 
 export default function Card({ title, cover, id }) {
 	return (
-		<>
-			<li key={id} className="housing">
+		<li key={id} className="housing">
+			<Link to={'/housing/' + id}>
 				<img src={cover} alt={title} className="housing_figure_cover" />
-				<h2 className="housing_title">
-					<Link to={'/housing/' + id}>{title}</Link>
-				</h2>
-			</li>
-		</>
+				<h2 className="housing_title">{title}</h2>
+			</Link>
+		</li>
 	)
 }
 
