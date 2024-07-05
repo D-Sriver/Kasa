@@ -1,8 +1,8 @@
 .banner {
-	margin: 20px auto;
+	margin: 0 auto;
 	width: 100%;
 	@media screen and (min-width: $tablette) {
-		margin: 63px auto 43px;
+		margin: 63px auto 0;
 	}
 	.wrapper {
 		height: 111px;
