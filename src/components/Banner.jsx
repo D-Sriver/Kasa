@@ -5,7 +5,8 @@ export default function Banner({ cover, title }) {
 		<section className="banner">
 			<div className="wrapper">
 				<img className="darker" src={cover} alt="Bannière" />
-				<h1>{title}</h1>
+				{/* Si title n'est pas défini, on n'affiche pas le h1 */}
+				{title && <h1>{title}</h1>}
 			</div>
 		</section>
 	)
